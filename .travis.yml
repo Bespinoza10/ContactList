@@ -11,3 +11,7 @@ script:
   - npm run test -- karma.conf.js
 after_script:
   - cat ./coverage/PhantomJS*/lcov.info | ./node_modules/codeclimate-test-reporter/bin/codeclimate.js
+env:
+  global:
+    - secure: UHOlLerO7MPH8AtptVmIhYZ8rLysp1Gj4W70ysa0nIQXOcAenWZPji7kLKUS9A3lDt1l1r9uPc7rXUe5SzqoDs8u3snv/OEIHEEtLbxe2Xnqr8uF4sofQQ+mEGShs7Zrj2/RrsIQsNJZmHxMzLWCxvUWt6VJ+M2Cbft8XdHYVw8=
+    - secure: F5613Xl4P5g98Thx/o9UifXFGkJlxFJWYzlecMbntwH0W9CbHNrezqOJNJgqKhpVoQWftNriuZPgQJWHhM0GcZGOSdguwdEHUf8xQu5gfpmf6d3W9C2IeYNx62N+D8eOzfrAvS9uTj757asMZeVwceRIQqShue+Px8OkY47PwQ4=
