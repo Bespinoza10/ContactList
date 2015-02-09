@@ -1,22 +1,22 @@
 {
-  "name": "ContactList",
+  "name": "c8-friends-list",
   "version": "1.0.0",
-  "description": "Clean and Modern Contact List",
-  "main": "index.js",
+  "description": "",
+  "main": "public/index.html",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start",
     "test-once": "npm run test -- --single-run"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bespinoza10/ContactList.git"
+    "url": "https://github.com/sscotth/c8-friends-list.git"
   },
-  "author": "Brandon Espinoza",
+  "author": "Scott <scott@sscotth.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Bespinoza10/ContactList/issues"
+    "url": "https://github.com/sscotth/c8-friends-list/issues"
   },
-  "homepage": "https://github.com/Bespinoza10/ContactList",
+  "homepage": "https://github.com/sscotth/c8-friends-list",
   "devDependencies": {
     "chai": "^1.10.0",
     "codeclimate-test-reporter": "0.0.4",
