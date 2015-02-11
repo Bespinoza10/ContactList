@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_install:
   - npm install -g npm
   - npm install -g bower
@@ -12,9 +12,10 @@ script:
 after_script:
   - cat ./coverage/PhantomJS*/lcov.info | ./node_modules/codeclimate-test-reporter/bin/codeclimate.js
 after_succes:
-  -npm install -g firebase tools
-  -if [[ "$TRAVIS_PULL_REQUEST" == "false" ]] && [[ "$TRAVIS_BRANCH" == "master" ]] then firebase deploy fi
+  - npm install -g firebase tools -if [[ "$TRAVIS_PULL_REQUEST" == "false"]] && [[ "$TRAVIS_BRANCH" == "master" ]] firebase deploy --email espinozab100@gmail.com --pasword brandone10
 env:
   global:
-    - secure: UHOlLerO7MPH8AtptVmIhYZ8rLysp1Gj4W70ysa0nIQXOcAenWZPji7kLKUS9A3lDt1l1r9uPc7rXUe5SzqoDs8u3snv/OEIHEEtLbxe2Xnqr8uF4sofQQ+mEGShs7Zrj2/RrsIQsNJZmHxMzLWCxvUWt6VJ+M2Cbft8XdHYVw8=
-    - secure: F5613Xl4P5g98Thx/o9UifXFGkJlxFJWYzlecMbntwH0W9CbHNrezqOJNJgqKhpVoQWftNriuZPgQJWHhM0GcZGOSdguwdEHUf8xQu5gfpmf6d3W9C2IeYNx62N+D8eOzfrAvS9uTj757asMZeVwceRIQqShue+Px8OkY47PwQ4=
+  - secure: UHOlLerO7MPH8AtptVmIhYZ8rLysp1Gj4W70ysa0nIQXOcAenWZPji7kLKUS9A3lDt1l1r9uPc7rXUe5SzqoDs8u3snv/OEIHEEtLbxe2Xnqr8uF4sofQQ+mEGShs7Zrj2/RrsIQsNJZmHxMzLWCxvUWt6VJ+M2Cbft8XdHYVw8=
+  - secure: F5613Xl4P5g98Thx/o9UifXFGkJlxFJWYzlecMbntwH0W9CbHNrezqOJNJgqKhpVoQWftNriuZPgQJWHhM0GcZGOSdguwdEHUf8xQu5gfpmf6d3W9C2IeYNx62N+D8eOzfrAvS9uTj757asMZeVwceRIQqShue+Px8OkY47PwQ4=
+  - secure: b6nX7SbsIsyj0GvgYkZ2mysOI+JHFoOCww8FqgWn0zvsZyNaCxvPrrSCKzp56tvzBL325kS5odc2L78iOY2ZELvCA3PzlwNUynsImOjkbK5J/0CL6ch6zwwjr3SzYdTSnPTSS6Q3saR86nVZ5MEJLBLJEGHrKxX+jTlfaCSIoec=
+  - secure: UXivaWofuiXL8WMwxNcOd3LsRl5pNw3C0noR9zYC3o7crJQGBNdtWvCYYIFdrpv/DB1bc4YdWox4ne3EdV90ncO9VN49uvNXBgdNDVu1FdAD6dS/BpKvgAec+k2j6zFR+F2+PuVo2VLzvU2zEBHFHByCQpMr9VGBhYqjlIYi25U=
