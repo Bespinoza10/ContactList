@@ -1,0 +1,107 @@
+body
+{
+	background: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.hidden
+{
+	display: none;
+}
+
+table {
+  max-width:900px;
+  max-height:910px;
+  margin: 10px auto;
+  box-shadow: 0px -1px 30px #888;
+  background-color:#318cdc
+}
+
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+thead th {
+  font-weight: 100;
+  font-size: 15px;
+  background: #318cdc;
+  color: #fff;
+  font-family:'Alegreya Sans SC', sans-serif;
+}
+
+tr {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: rgba(104, 169, 230, 0.68);
+}
+
+th, td {
+  text-align: center;
+  padding: 20px;
+  font-weight: 300;
+}
+
+
+
+td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #fff;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Container
+{
+position:relative;
+left: auto;
+top:50px;
+margin:0 auto;
+max-width:900px;
+max-height:auto;
+background:white;
+border-left: 5px solid #fff;
+box-shadow: 0px -1px 30px #888;
+border-right: 5px solid #fff;
+border-top: 5px solid #fff;
+border-bottom: 5px solid #fff;
+border-radius: 5px;
+}
+
+#SearchBar
+{
+  position:relative;
+  left:300px;
+}
+
+#NewContact
+{
+  position:relative;
+  left:
+}
+
+/***************************
+Log in aand log out Stlying
+***************************/
+
+h2
+{
+  position:relative;
+  left:350px
+  font-size:12px;
+}
+
+

@@ -11,6 +11,9 @@ script:
   - npm run test -- karma.conf.js
 after_script:
   - cat ./coverage/PhantomJS*/lcov.info | ./node_modules/codeclimate-test-reporter/bin/codeclimate.js
+after_succes:
+  -npm install -g firebase tools
+  -if [[ "$TRAVIS_PULL_REQUEST" == "false" ]] && [[ "$TRAVIS_BRANCH" == "master" ]] then firebase deploy fi
 env:
   global:
     - secure: UHOlLerO7MPH8AtptVmIhYZ8rLysp1Gj4W70ysa0nIQXOcAenWZPji7kLKUS9A3lDt1l1r9uPc7rXUe5SzqoDs8u3snv/OEIHEEtLbxe2Xnqr8uF4sofQQ+mEGShs7Zrj2/RrsIQsNJZmHxMzLWCxvUWt6VJ+M2Cbft8XdHYVw8=
