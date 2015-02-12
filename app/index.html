@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../bower_components/lodash/lodash.min.js"></script>
-		<script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
-		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 <body>
 
@@ -29,20 +25,20 @@
      <input type="text" placeholder="Find Stuff">  <a href="#" class="alert button expand">Search</a>
    </div>
 
-   <div id="NewContact" class="hidden">
+   <div id="NewContact">
    	<input type="button" value="New Contact" id="addContact">
    	<form id="newContactForm" action="#">
-	  <input type="text" id="photo" placeholder="Photo url">
+	  <input type="url" id="photo" placeholder="Photo url">
 	  <input type="text" id="Name" placeholder="Name">
 	  <input type="text" id="Phone" placeholder="Phone Number">
 	  <input type="email" id="Email" placeholder="Email">
-	  <input type="text" id="Website" placeholder="Website">
+	  <input type="url" id="Website" placeholder="Website">
 	  <input type="text" id="Twitter" placeholder="Twitter">
 	  <button id="SaveButton">Save</button>
 	</form>
    </div>
   
-  <table class="hidden">
+  <table class=">
 
   <thead>
     <tr>
@@ -60,5 +56,8 @@
 	    </tbody>
     </table>
   </div>
+ 	 	<script src="vendor/jquery.min.js"></script>
+		<script src="vendor/firebase.js"></script>
+		<script src="js/main.js"></script>
 </body>
 </html>
